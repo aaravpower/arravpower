@@ -131,9 +131,9 @@ body {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
-  padding: 0 80px;
+  padding: 0 10px;
 
 }
 
@@ -152,17 +152,16 @@ body {
 }
 #hero button {
   background-color: transparent;
-  background-image: url(images/button.png);
+
   background-repeat: no-repeat;
   background-size: cover;
-  width: 260px;
-  height: 60px;
+
   border: 0;
   cursor: pointer;
   font-size: 20px;
   font-weight: 700;
   color: #088178;
-  padding: 14px 65px 14px 65px;
+
 }
 
 /* feature section styles */
@@ -830,7 +829,7 @@ header {
 	background-color: white;
 	color: rgb(0, 0, 0);
 	padding: 5px 0;
-	position: fixed;
+	position: relative;
 	width: 100%;
 	z-index: 100;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -1170,9 +1169,9 @@ body{
 	font-size: 16px;
 	margin-right: 12px;
 }
-li{
+/* li{
 	list-style: none;
-}
+} */
 .useful-link h2{
 	padding-bottom: 15px;
 	font-size: 20px;
@@ -1544,5 +1543,63 @@ body::after {
 
   .wire-image-container:nth-child(3n) {
     margin-right: 0;
+  }
+}
+.slider-container {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+#prevBtn {
+  left: 0;
+}
+
+#nextBtn {
+  right: 0;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .slider-container {
+  
+  
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .slider-container {
+
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slider-container {
+
   }
 }
