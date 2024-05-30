@@ -97,7 +97,7 @@ body {
 }
 .header-list-nav ul a:hover,
 .header-list-nav ul a.active {
-  color: #088178;
+  color: #e25257;
   content: "";
 }
 .header-list-icon a {
@@ -107,7 +107,7 @@ body {
 }
 .header-list-icon a:hover,
 .header-list-nav ul a.active {
-  color: #088178;
+  color: #e25257;
 }
 .header-list-nav ul li a:hover::after,
 .header-list-nav ul li a.active::after {
