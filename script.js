@@ -46,4 +46,21 @@ function myFunction() {
     moreText.style.display = "inline";
   }
 }
+const textContent = document.getElementById('text-content');
+const readMoreButton = document.getElementById('read-more');
 
+let isExpanded = false;
+
+readMoreButton.addEventListener('click', () => {
+    if (!isExpanded) {
+        textContent.style.overflow = 'visible';
+        textContent.style.webkitLineClamp = 'none';
+        readMoreButton.textContent = 'Read Less';
+        isExpanded = true;
+    } else {
+        textContent.style.overflow = 'hidden';
+        textContent.style.webkitLineClamp = '2';
+        readMoreButton.textContent = 'Read More';
+        isExpanded = false;
+    }
+});
