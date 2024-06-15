@@ -156,8 +156,8 @@ body {
 
   background-repeat: no-repeat;
   background-size: cover;
-
-  border: 0;
+outline: none;
+  border: none;
   cursor: pointer;
   font-size: 20px;
   font-weight: 700;
