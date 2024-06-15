@@ -1346,15 +1346,7 @@ body {
   position: relative;
 } */
 
-body::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
 
-}
 
 .contactsec {
   position: relative;
