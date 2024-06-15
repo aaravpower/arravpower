@@ -65,15 +65,16 @@ body {
 #header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   background-color: white;
-  padding: 3px 19px;
+  padding: 3px 18px;
+  gap: 50px;
  
 
 
 }
 .header-logo img{
-  height:5vw;
+  height:4vw;
 }
 .header-list {
   display: flex;
