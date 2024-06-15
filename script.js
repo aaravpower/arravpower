@@ -38,7 +38,7 @@ function myFunction() {
 
   if (dots.style.display === "none") {
     dots.style.display = "inline";
-    btnText.innerHTML = "Read more"; 
+    btnText.innerHTML = "View All Poducts"; 
     moreText.style.display = "none";
   } else {
     dots.style.display = "none";
@@ -47,20 +47,20 @@ function myFunction() {
   }
 }
 const textContent = document.getElementById('text-content');
-const readMoreButton = document.getElementById('read-more');
+const readMoreButton = document.getElementById('ViewPoducts');
 
 let isExpanded = false;
 
-readMoreButton.addEventListener('click', () => {
-    if (!isExpanded) {
-        textContent.style.overflow = 'visible';
-        textContent.style.webkitLineClamp = 'none';
-        readMoreButton.textContent = 'Read Less';
-        isExpanded = true;
-    } else {
-        textContent.style.overflow = 'hidden';
-        textContent.style.webkitLineClamp = '2';
-        readMoreButton.textContent = 'Read More';
-        isExpanded = false;
-    }
-});
+// readMoreButton.addEventListener('click', () => {
+//     if (!isExpanded) {
+//         textContent.style.overflow = 'visible';
+//         textContent.style.webkitLineClamp = 'none';
+//         readMoreButton.textContent = 'Read Less';
+//         isExpanded = true;
+//     } else {
+//         textContent.style.overflow = 'hidden';
+//         textContent.style.webkitLineClamp = '2';
+//         readMoreButton.textContent = 'View All Poducts';
+//         isExpanded = false;
+//     }
+// });

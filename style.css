@@ -1678,7 +1678,7 @@ height: auto;
 .box-content .button:hover {
   background-color: #d94646;
 }
-.read-more-button {
+.ViewPoducts-button {
 display: none;
 }
 @media (max-width: 768px) {
@@ -1701,7 +1701,7 @@ display: -webkit-box;
 -webkit-box-orient: vertical;
 overflow: hidden;
 }
-  .read-more-button {
+  .ViewPoducts-button {
   display: inline-block;
   background-color: #f05050;
   color: #fff;
@@ -1710,7 +1710,7 @@ overflow: hidden;
   text-decoration: none;
   margin-top: 50px;
   }
-  .read-more-button:hover {
+  .ViewPoducts-button:hover {
   background-color: #d94646;
   }
 }
