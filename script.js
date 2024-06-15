@@ -51,16 +51,16 @@ const readMoreButton = document.getElementById('ViewPoducts');
 
 let isExpanded = false;
 
-// readMoreButton.addEventListener('click', () => {
-//     if (!isExpanded) {
-//         textContent.style.overflow = 'visible';
-//         textContent.style.webkitLineClamp = 'none';
-//         readMoreButton.textContent = 'Read Less';
-//         isExpanded = true;
-//     } else {
-//         textContent.style.overflow = 'hidden';
-//         textContent.style.webkitLineClamp = '2';
-//         readMoreButton.textContent = 'View All Poducts';
-//         isExpanded = false;
-//     }
-// });
+readMoreButton.addEventListener('click', () => {
+    if (!isExpanded) {
+        textContent.style.overflow = 'visible';
+        textContent.style.webkitLineClamp = 'none';
+        readMoreButton.textContent = 'Read Less';
+        isExpanded = true;
+    } else {
+        textContent.style.overflow = 'hidden';
+        textContent.style.webkitLineClamp = '2';
+        readMoreButton.textContent = 'View All Poducts';
+        isExpanded = false;
+    }
+});
