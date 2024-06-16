@@ -67,10 +67,16 @@ body {
   background: rgb(209,19,19);
   background: linear-gradient(239deg, rgba(209,19,19,0.5139590992647058) 0%, rgba(255,182,145,1) 100%);
   margin: 0;
+  height: 4vw;
 }
 .topnav ul{
   display: flex;
   gap: 4vw;
+ 
+}
+.topnav ul li{
+  font-size: 1.2vw;
+  list-style: none;
 }
 /* header styles */
 
@@ -141,7 +147,7 @@ body {
 #hero {
 
   width: 100%;
-  height: 30vw;
+  height: 40vw;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -280,6 +286,7 @@ outline: none;
     background-color: white;
     color: black;
     font-size: 3vw;
+    font-weight: 300;
 }
 .product-section h1,
 .product-section p {
@@ -317,6 +324,7 @@ outline: none;
 .product-section .product-cart h4 {
   font-size: 1.5vw;
   color: rgb(41, 41, 41);
+  font-weight: 400;
 }
 .product-section .product-cart .stars {
   color: #e6ae2c;
