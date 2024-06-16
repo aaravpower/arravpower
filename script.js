@@ -30,7 +30,7 @@ function autoSlide() {
   nextSlide();
 }
 
-setInterval(autoSlide, 3000);
+setInterval(autoSlide, 6000);
 function myFunction() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");

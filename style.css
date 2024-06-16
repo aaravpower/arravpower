@@ -40,6 +40,7 @@ p {
   margin: 40px 0;
 }
 
+
 button.normal {
   font-size: 14px;
   font-weight: 600px;
@@ -59,7 +60,18 @@ button.normal:hover {
 body {
   width: 100%;
 }
-
+.topnav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(209,19,19);
+  background: linear-gradient(239deg, rgba(209,19,19,0.5139590992647058) 0%, rgba(255,182,145,1) 100%);
+  margin: 0;
+}
+.topnav ul{
+  display: flex;
+  gap: 4vw;
+}
 /* header styles */
 
 #header {
@@ -274,7 +286,7 @@ outline: none;
   text-align: center;
 }
 .product-section .product-cart {
-  width: 20vw;
+  width: 16vw;
   border: 1px solid #ebebeb;
   padding: 1vw;
   margin :0px;
