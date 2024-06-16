@@ -75,7 +75,7 @@ body {
  
 }
 .topnav h2{
-  font-size: 1.9vw;
+  font-size: 2vw;
   list-style: none;
   color: white;
   margin: 0;
@@ -1518,6 +1518,12 @@ a{
   @media only screen and (max-width: 600px) {
     .product-cart {
       width: calc(50% - 40px);
+    }
+    .topnav h2{
+      font-size: 4vw;
+      list-style: none;
+      color: white;
+      margin: 0;
     }
   }
 
