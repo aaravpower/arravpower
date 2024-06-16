@@ -67,16 +67,35 @@ body {
   background: rgb(209,19,19);
   background: linear-gradient(239deg, rgba(209,19,19,0.5139590992647058) 0%, rgba(255,182,145,1) 100%);
   margin: 0;
-  height: 4vw;
+  height: 29px;
 }
 .topnav ul{
   display: flex;
   gap: 4vw;
  
 }
-.topnav ul li{
-  font-size: 1.2vw;
+.topnav h2{
+  font-size: 1.5vw;
   list-style: none;
+  color: white;
+  margin: 0;
+}
+.topnav button{
+  display: flex;
+  background-color: white;
+  color: #D6313A;
+  margin: 0;
+  width: 58px;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  padding: 0;
+  margin-left: 10px;
+}
+.topnav button p {
+  color: #D6313A;
+  font-size: 8px;
+  margin: 0;
 }
 /* header styles */
 
@@ -988,7 +1007,7 @@ button {
 	margin: 2rem;
 	font-size: 1rem;
 	color: white !important;
-	background-color:#AB0000;
+	background-color:#D6313A;
 	text-align: center;
 	cursor: pointer;
 	width: 15rem;
@@ -1274,6 +1293,7 @@ body{
 	font-weight: 500;
     font-size: 15px;
 	display: flex;
+  color: white;
 }
 .address-links{
 	    line-height: 32px;
@@ -1281,12 +1301,12 @@ body{
 }
 .copy-right-sec{
 	padding: 1.8rem;
-    background: #02112c;
-    color: #fff;
+    background: #D6313A;
+    color: #e9e9e9;
     text-align: center;
 }
 .copy-right-sec a{
-	color: #fcd462;
+	color: #ffffff;
     font-weight: 500;
 }
 a{
@@ -1387,7 +1407,7 @@ a{
         padding: 1vw 17px;
         background-color: white;
         color: black;
-        font-size: 3vw;
+        font-size: 6vw;
     }
     .product-cart h4{
       font-size: 3.5vw !important;
@@ -1427,7 +1447,7 @@ a{
         padding: 1vw 17px;
         background-color: white;
         color: black;
-        font-size: 4vw !important;
+        font-size: 6vw !important;
     }
     .about h2{
       font-size: 5vw !important;
@@ -1541,6 +1561,7 @@ body {
 .sectionbottom {
   position: relative;
   z-home: 3;
+
 
 
 }
