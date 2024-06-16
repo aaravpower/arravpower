@@ -233,7 +233,7 @@ outline: none;
   background-color: #f1f1f1;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  z-home: 1;
 }
 
 .dropdown-content a {
@@ -248,24 +248,37 @@ outline: none;
 .dropdown:hover .dropdown-content {display: block;}
 
 /* feature section styles */
+.product-wlcmarva-sec{
+  background-image: url('./images/aarav\ web\ product\ bg.png');
+      background-size: cover;
+
+}
 
 .product-section .pro-collection {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-
+ flex-direction: column;
   align-items: center;
+}
+.product-section h1{
+  text-align: center;
+    margin-top: 0px;
+    padding: 31px 17px;
+    background-color: white;
+    color: black;
+    font-size: 3vw;
 }
 .product-section h1,
 .product-section p {
   text-align: center;
 }
 .product-section .product-cart {
-  width: 280px;
+  width: 19vw;
   border: 1px solid #ebebeb;
-  padding: 13px;
+  padding: 1vw;
   margin-bottom: 30px;
-  border-radius: 25px;
+  border-radius: 2vw;
   position: relative;
   text-align: center;
   box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
@@ -274,6 +287,7 @@ outline: none;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  background-color: white;
   
 }
 .product-section .product-cart:hover {
@@ -281,7 +295,7 @@ outline: none;
 }
 .product-section .product-cart img {
   width: 100%;
-  border-radius: 25px;
+
 }
 .product-section .product-cart span {
   color: #969696;
@@ -289,7 +303,7 @@ outline: none;
   line-height: 30px;
 }
 .product-section .product-cart h4 {
-  font-size: 18px;
+  font-size: 1.5vw;
   color: rgb(41, 41, 41);
 }
 .product-section .product-cart .stars {
@@ -516,7 +530,7 @@ h4
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-home: 1;
   top: 0;
   left: 0;
   background-color: #111;
@@ -842,7 +856,7 @@ header {
 	padding: 5px 0;
 	position: relative;
 	width: 100%;
-	z-index: 100;
+	z-home: 100;
 	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -1113,13 +1127,14 @@ body{
 
 }
 #footer{
-	background: #f7f7f7;
+
     padding: 3rem;
 	/* padding-top: 5rem; */
 	padding-top: 7rem;
   background-size: cover;
     padding-bottom: 80px;
-    background-image: url("/images/889.jpg");
+    background: rgb(209,19,19);
+    background: linear-gradient(239deg, rgba(209,19,19,0.5139590992647058) 0%, rgba(255,182,145,1) 100%);
 
 
 
@@ -1317,8 +1332,57 @@ a{
   .product-cart h4 {
     margin-top: 10px;
   }
+  .divindingdivone{
+    display: flex; 
+    gap: 2.8vw;
+    align-items: center;
+    justify-content: center;
+  }
 
   /* Media query for smaller screens */
+  @media only screen and (max-width: 650px) {
+    .product-section .product-cart {
+      width: 23vw; }
+      .product-cart h4 {
+        font-size: 2vw;
+        color: rgb(41, 41, 41);
+    }
+  }
+  @media only screen and (max-width: 470px) {
+    .product-section .product-cart {
+      width: 23vw; }
+      .divindingdivone{
+        display: flex; 
+        gap: 0.1vw;}
+         .product-cart h4 {
+          font-size: 2vw;
+       
+      }
+  }
+  @media only screen and (max-width: 400px) {
+    .product-section .product-cart {
+      width: 23vw; } 
+     .product-cart h4 {
+        font-size: 2vw;
+        color: rgb(141, 44, 44);
+    }
+    }
+    @media only screen and (max-width: 390px) {
+      .product-section .product-cart {
+        width: 20vw; } 
+       .product-cart h4 {
+          font-size: 2vw;
+          color: rgb(141, 44, 44);
+      }
+      .divindingdivone{
+        display: flex; 
+        gap: 0vw;}
+      } @media only screen and (max-width: 300px) {
+        .product-section .product-cart {
+          width: 17vw; } }
+          @media only screen and (max-width: 250px) {
+            .product-section .product-cart {
+              width: 13vw; } }
   @media only screen and (max-width: 600px) {
     .product-cart {
       width: calc(50% - 40px);
@@ -1358,13 +1422,13 @@ body {
 
 .contactsec {
   position: relative;
-  z-index: 3;
+  z-home: 3;
   padding: 90px 8px;
 
 }
 .sectionbottom {
   position: relative;
-  z-index: 3;
+  z-home: 3;
 
 
 }
@@ -1576,7 +1640,7 @@ body {
   border: none;
   cursor: pointer;
   padding: 10px;
-  z-index: 1;
+  z-home: 1;
 }
 
 #prevBtn {
@@ -1614,7 +1678,7 @@ body {
 
 .box {
   position: relative;
-z-index: 1;
+z-home: 1;
 width: 100%;
 box-shadow: 6px 8px 18px rgba(0, 0, 0, 0.3);
 border-radius: 31px;

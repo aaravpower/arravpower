@@ -5,25 +5,25 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-let slideIndex = 0;
+let slidehome = 0;
 const slides = document.querySelectorAll('.slider img');
 const totalSlides = slides.length;
 
-function showSlide(index) {
+function showSlide(home) {
   slides.forEach((slide) => {
     slide.style.display = 'none';
   });
-  slides[index].style.display = 'block';
+  slides[home].style.display = 'block';
 }
 
 function nextSlide() {
-  slideIndex = (slideIndex + 1) % totalSlides;
-  showSlide(slideIndex);
+  slidehome = (slidehome + 1) % totalSlides;
+  showSlide(slidehome);
 }
 
 function prevSlide() {
-  slideIndex = (slideIndex - 1 + totalSlides) % totalSlides;
-  showSlide(slideIndex);
+  slidehome = (slidehome - 1 + totalSlides) % totalSlides;
+  showSlide(slidehome);
 }
 
 function autoSlide() {
