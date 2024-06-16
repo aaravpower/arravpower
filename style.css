@@ -1359,6 +1359,9 @@ a{
         color: black;
         font-size: 3vw;
     }
+    .product-cart h4{
+      font-size: 3.5vw !important;
+    }
   }
   @media only screen and (max-width: 470px) {
     .product-section .product-cart {
@@ -1376,6 +1379,9 @@ a{
         }
         .about h2{
           font-size: 4vw !important;
+        }
+        .product-cart h4{
+          font-size: 3.5vw !important;
         }
   }
   @media only screen and (max-width: 400px) {
@@ -1395,6 +1401,9 @@ a{
     }
     .about h2{
       font-size: 5vw !important;
+    }
+    .product-cart h4{
+      font-size: 3.5vw !important;
     }
     }
     @media only screen and (max-width: 390px) {
@@ -1418,11 +1427,17 @@ a{
         .about h2{
           font-size: 6vw !important;
         }
+        .product-cart h4{
+          font-size: 3.5vw !important;
+        }
       }
       
       @media only screen and (max-width: 300px) {
         .product-section .product-cart {
-          width: 24vw; }
+          width: 27vw; }
+          .product-cart h4{
+            font-size: 4vw !important;
+          }
           .product-section h1{
             text-align: center;
               margin-top: 0px;
@@ -1433,10 +1448,11 @@ a{
           }
           .divindingdivone{
             display: flex; 
-            gap: 6vw;}
+            gap: 5vw;}
           .about h2{
             font-size: 7vw !important;
           }
+          
         }
           @media only screen and (max-width: 250px) {
             .product-section .product-cart {
@@ -1444,6 +1460,9 @@ a{
               .divindingdivone{
                 display: flex; 
                 gap: 6vw;}
+                .product-cart h4{
+                  font-size: 3.5vw !important;
+                }
             }
 
   @media only screen and (max-width: 600px) {
