@@ -64,3 +64,7 @@ readMoreButton.addEventListener('click', () => {
         isExpanded = false;
     }
 });
+function showPhoneNumber() {
+  var phoneNumberDiv = document.getElementById('phone-number');
+  phoneNumberDiv.classList.toggle('hidden');
+}
