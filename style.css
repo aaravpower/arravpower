@@ -76,10 +76,13 @@ body {
  
 }
 .topnav h2{
-  font-size: 2vw;
+  font-size: 12px;
   list-style: none;
   color: white;
   margin: 0;
+}
+.col-md-3 ul{
+  list-style: none;
 }
 .topnav button{
   display: flex;
@@ -616,7 +619,16 @@ h4
   margin: 5px auto;
   transition: background-color 0.3s, transform 0.3s;
 }
-
+.row {
+  display: flex;
+  align-items: baseline;
+}
+@media screen and (max-height: 1350px){
+   .row {
+    display: flex;
+    align-items: center;
+  }
+}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -1532,7 +1544,7 @@ a{
       width: calc(50% - 40px);
     }
     .topnav h2{
-      font-size: 4vw;
+      font-size: 15px;
       list-style: none;
       color: white;
       margin: 0;
@@ -1898,8 +1910,15 @@ height: auto;
   background-color: #d94646;
 }
 .ViewPoducts-button {
-display: none;
-}
+  display: inline-block;
+  background-color: #f05050;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+ 
+  }
+
 @media (max-width: 768px) {
   .box-content {
       flex-direction: column;
@@ -1920,15 +1939,7 @@ display: -webkit-box;
 -webkit-box-orient: vertical;
 overflow: hidden;
 }
-  .ViewPoducts-button {
-  display: inline-block;
-  background-color: #f05050;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-top: 50px;
-  }
+
   .ViewPoducts-button:hover {
   background-color: #d94646;
   }
