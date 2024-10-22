@@ -281,5 +281,34 @@
 		</section>
 		<!-- footer copy right section end -->
     <script src="script.js"></script>
+	  <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length} ;
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex-1].style.display = "block";
+      }
+      
+      // Auto-play the slider every 3 seconds (adjust the interval as needed)
+      var interval = setInterval(function() {
+        plusDivs(1);
+      }, 2000);
+      
+      // Stop the auto-play when a user interacts with the slider
+      document.querySelector('.w3-button').addEventListener('click', function() {
+        clearInterval(interval);
+      });
+      </script>
   </body>
 </html>
