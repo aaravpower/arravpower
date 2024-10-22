@@ -67,7 +67,7 @@ body {
   background: rgb(209,19,19);
   background: linear-gradient(239deg, rgba(209,19,19,0.5139590992647058) 0%, rgba(255,182,145,1) 100%);
   margin: 0;
-  height: 29px;
+  height: 50px;
 
 }
 .topnav ul{
@@ -76,7 +76,7 @@ body {
  
 }
 .topnav h2{
-  font-size: 12px;
+  font-size: 30px;
   list-style: none;
   color: white;
   margin: 0;
@@ -84,21 +84,24 @@ body {
 .col-md-3 ul{
   list-style: none;
 }
+.lastcol{
+  text-align: left;
+}
 .topnav button{
   display: flex;
   background-color: white;
   color: #D6313A;
   margin: 0;
-  width: 58px;
+  width: 102px;
   align-items: center;
   justify-content: center;
-  height: 20px;
+  height: 30px;
   padding: 0;
   margin-left: 10px;
 }
 .topnav button p {
   color: #D6313A;
-  font-size: 8px;
+  font-size: 16px;
   margin: 0;
 }
 /* header styles */
@@ -293,7 +296,6 @@ outline: none;
   background-image: url('./images/aarav\ web\ product\ bg.png');
   background-repeat: no-repeat;
   background-position: center center;
-  background-attachment: fixed;
   background-size: cover;
   /* height: 100vh; */
   width: 100%;
@@ -1623,7 +1625,7 @@ body {
 .row  {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
 }
 
@@ -1739,6 +1741,7 @@ body {
   
   .row {
     flex-direction: column;
+    align-items: center;
   }
   
   .contact-info {
