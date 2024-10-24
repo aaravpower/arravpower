@@ -68,3 +68,28 @@ function showPhoneNumber() {
   var phoneNumberDiv = document.getElementById('phone-number');
   phoneNumberDiv.classList.toggle('hidden');
 }
+  function openModal() {
+        document.getElementById("myModal").style.display = "block";
+      }
+
+      // Function to close the modal
+      function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+        
+        // Stop the video when modal is closed
+        var iframe = document.getElementById("youtubeVideo");
+        iframe.src = iframe.src;
+      }
+
+      // Close the modal if clicked outside the video
+      window.onclick = function(event) {
+        var modal = document.getElementById("myModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+          
+          // Stop the video when modal is closed
+          var iframe = document.getElementById("youtubeVideo");
+          iframe.src = iframe.src;
+        }
+      }
